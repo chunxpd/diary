@@ -1,8 +1,9 @@
-package com.example.diary;
+package org.techtown.diary;
 
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -136,7 +137,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder>
 
             // set picture exists
             String picturePath = item.getPicture();
-            AppConstants.println("picturePath -> " + picturePath);
+            Log.d("NoteAdapter", "picturePath -> " + picturePath);
 
             if (picturePath != null && !picturePath.equals("")) {
                 //AppConstants.println("DEBUG 1");

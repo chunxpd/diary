@@ -1,4 +1,4 @@
-package com.example.diary;
+package org.techtown.diary;
 
 import android.view.View;
 

@@ -36,8 +36,8 @@
                 android:id="@+id/contentsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contents"
-                android:textSize="20sp" />
+                android:text="내용"
+                android:textSize="24sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -57,8 +57,7 @@
                     android:layout_height="32dp"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/weatherImageView"
-                    android:src="@drawable/picture_128"
-                    android:visibility="gone"/>
+                    android:src="@drawable/picture_128"/>
 
                 <TextView
                     android:id="@+id/locationTextView"
@@ -66,8 +65,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:text="OOO OOO"
-                    android:textSize="15sp" />
+                    android:text="강남구 삼성동"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/dateTextView"
@@ -75,9 +74,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:text="02-10"
-                    android:textColor="#008577"
-                    android:textSize="15sp" />
+                    android:text="02월 10일"
+                    android:textColor="#FF0000FF"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
@@ -99,7 +98,7 @@
             android:layout_margin="10dp"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/noimagefound" />
+            android:src="@drawable/picture1" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,8 +113,8 @@
                 android:id="@+id/contentsTextView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contents"
-                android:textSize="20sp" />
+                android:text="내용"
+                android:textSize="24sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -144,8 +143,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:text="OOO OOO"
-                    android:textSize="15sp" />
+                    android:text="강남구 삼성동"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/dateTextView2"
@@ -153,9 +152,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:text="02-10"
+                    android:text="02월 10일"
                     android:textColor="#FF0000FF"
-                    android:textSize="15sp" />
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 

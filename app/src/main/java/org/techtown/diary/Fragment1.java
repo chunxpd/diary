@@ -1,21 +1,15 @@
-package com.example.diary;
-
+package org.techtown.diary;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Date;
 
 import lib.kingja.switchbutton.SwitchMultiButton;
 
@@ -32,7 +26,6 @@ import lib.kingja.switchbutton.SwitchMultiButton;
  * ⑦ 눈
  */
 public class Fragment1 extends Fragment {
-    private static final String TAG = "Fragment1";
 
     RecyclerView recyclerView;
     NoteAdapter adapter;
@@ -66,6 +59,7 @@ public class Fragment1 extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment1, container, false);
 
         initUI(rootView);
+
         return rootView;
     }
 
@@ -112,11 +106,11 @@ public class Fragment1 extends Fragment {
             public void onItemClick(NoteAdapter.ViewHolder holder, View view, int position) {
                 Note item = adapter.getItem(position);
 
-                Log.d(TAG, "아이템 선택됨 : " + item.get_id());
-
+                Toast.makeText(getContext(), "아이템 선택됨 : " + item.getContents(), Toast.LENGTH_LONG).show();
             }
         });
 
     }
+
 
 }

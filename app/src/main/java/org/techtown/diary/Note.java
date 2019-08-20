@@ -1,4 +1,4 @@
-package com.example.diary;
+package org.techtown.diary;
 
 public class Note {
     int _id;
